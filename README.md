@@ -1,5 +1,5 @@
 # Clean JS
-Replaces all the require(file.js) and export statements in file with the actual file cotent, and compiles them into one single perfect JavaScript file for the whole project.
+Replaces all the require(file.js) and export statements in file with the actual file content, and compiles them into one single perfect JavaScript file for the whole project.
 
 You can , also clean source-maps statements from a file for a clean flat file with no extra code for external dependence tree modulation.
 
@@ -7,12 +7,12 @@ You can , also clean source-maps statements from a file for a clean flat file wi
 This result in :-
 
 1. A clean single JavaScript file 
-2. Lesss code unlike what you get when using build sytem/browserify
-3. Its striaght foward and browser compatible js
-4. Improved code readabibity
+2. Less code unlike what you get when using build sytem/browserify
+3. Its straight forward and browser compatible js
+4. Improved code readability
 5. A simple new file while leaving your project intact
 6. Live Updates as  project file/s  change 
-7. Satisifaction fro getting rid of unnecessary require overhead from project.
+7. Satisfaction fro getting rid of unnecessary require overhead from project.
 
 
 ##### NOTE:

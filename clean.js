@@ -33,7 +33,7 @@ function pad(size,chars,buffer=2,l=" ",r=" ",favour="r") {
 }
 
 
-module.exports = class Clean {
+class Clean {
 
     /**
      * Perfect Constructor
@@ -122,6 +122,7 @@ module.exports = class Clean {
 
     }
 
+    //noinspection JSUnusedGlobalSymbols
     /**
      * Watches all the files of the dependency files and ushers in
      * a new perfection each time any of the raw dependency files
@@ -180,5 +181,7 @@ module.exports = class Clean {
         });
     }
 }
+
+module.exports = Clean;
 
 
