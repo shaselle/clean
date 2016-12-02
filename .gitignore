@@ -1,0 +1,7 @@
+
+.idea/cleanjs.iml
+.idea/modules.xml
+.idea/workspace.xml
+clean.js.map
+node_modules/
+typings/
