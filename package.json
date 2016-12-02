@@ -1,6 +1,6 @@
 {
   "name": "cleanjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Replaces all the require(file.js) and export statements in file with the actual file cotent, and compiles them into one single perfect JavaScript file for the whole project.",
   "main": "clean.js",
   "scripts": {
