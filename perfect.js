@@ -182,6 +182,3 @@ class Perfect {
 }
 
 
-new Perfect("./dist/Alleon.js", "./dist/alleon.js").watch();
-
-
