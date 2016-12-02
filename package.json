@@ -1,0 +1,32 @@
+{
+  "name": "cleanjs",
+  "version": "1.0.0",
+  "description": "Replaces all the require(file.js) and export statements in file with the actual file cotent, and compiles them into one single perfect JavaScript file for the whole project.",
+  "main": "clean.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaselle/cleanjs.git"
+  },
+  "keywords": [
+    "cleanjs",
+    "js",
+    "flatten",
+    "remove",
+    "single",
+    "JavaSript",
+    "clean",
+    "perfect",
+    "require",
+    "include",
+    "vanilla"
+  ],
+  "author": "Shadrack Ndacayisenga <shaselloiel@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shaselle/cleanjs/issues"
+  },
+  "homepage": "https://github.com/shaselle/cleanjs#readme"
+}
