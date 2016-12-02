@@ -33,7 +33,7 @@ function pad(size,chars,buffer=2,l=" ",r=" ",favour="r") {
 }
 
 
-class Perfect {
+module.exports = class Perfect {
 
     /**
      * Perfect Constructor
