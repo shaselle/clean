@@ -1,10 +1,28 @@
 # Perfect JS
-Remove all unwanted require, exports, or source-map statements from a file and clean a single clean JavaScript file. A clean flat file with no extra code for external dependence tree modulation.
+Replaces all the require(file.js) and export statements in file with the actual file cotent, and compiles them into one single perfect JavaScript file for the whole project.
+
+You can , also clean source-maps statements from a file for a clean flat file with no extra code for external dependence tree modulation.
+
+### Results 
+This result in :-
+
+1. A clean single JavaScript file 
+2. Lesss code unlike what you get when using build sytem/browserify
+3. Its striaght foward and browser compatible js
+4. Improved code readabibity
+5. A simple new file while leaving your project intact
+6. Live Updates as  project file/s  change 
+7. Satisifaction fro getting rid of unnecessary require overhead from project.
+
+
+##### NOTE:
+    This file is not yet tested so, check though the code to see what its doing before using it. 
 
 ## Get Started
 All you need is to 
 
 1. Get this perfect.js into  project root directory.
+   
 2. Require perfect.js file into your gulp or grunt
   ```javascript
   let Perfect = require("perfect.js").Perfect;
