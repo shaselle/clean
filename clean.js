@@ -33,7 +33,7 @@ function pad(size,chars,buffer=2,l=" ",r=" ",favour="r") {
 }
 
 
-module.exports = class Perfect {
+module.exports = class Clean {
 
     /**
      * Perfect Constructor
@@ -156,7 +156,7 @@ module.exports = class Perfect {
                     console.log(`${pad(20,filename,2,"-")} `,
                         ` ${eventType}ed @ ${h}:${m}:${d.getSeconds()}:${d.getMilliseconds()}`,
                         ` perfected `,this.clanFile);
-                    new Perfect(this.rawFile, this.clanFile,this.options)
+                    new Clean(this.rawFile, this.clanFile,this.options)
                 }
 
             });
