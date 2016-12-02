@@ -1,4 +1,4 @@
-# Perfect JS
+# Clean JS
 Replaces all the require(file.js) and export statements in file with the actual file cotent, and compiles them into one single perfect JavaScript file for the whole project.
 
 You can , also clean source-maps statements from a file for a clean flat file with no extra code for external dependence tree modulation.
@@ -21,13 +21,13 @@ This result in :-
 ## Get Started
 All you need is to 
 
-1. Get this perfect.js into  project root directory.
+1. Get this clean.js into  project root directory.
    
-2. Require perfect.js file into your gulp or grunt
+2. Require clean.js file into your gulp or grunt
   ```javascript
-  let Perfect = require("perfect.js").Perfect;
+  let Clean = require("perfect.js").Clean;
 
-  new Perfect("from/raw/files.js","to/clean/single.js")
+  new Clean("from/raw/files.js","to/clean/single.js")
   ```
 3. If you want to watch the files for changes go ahead
 
@@ -35,6 +35,6 @@ All you need is to
   new Perfect("from/raw/files.js","to/clean/single.js").watch()
   ```
   
-As of now  this supports perfection of js files directly so long there is require(files) to be converted to a single file js.
+As of now  this supports cleaning of js files directly so long there is require(files) to be converted to a single file js.
 
 When using TypeScript give the link to your compiled entry.js file as the first argument to Perfect.   
