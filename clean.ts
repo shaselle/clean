@@ -1,13 +1,16 @@
-/**-------------------------------------------------------------------------
- * Created by shadrack on 28/11/16.
- * Name    : Perfect
- * Purpose : Clean and include all require(files) in one single file js file
- *------------------------------------------------------------------------*/
+/**---------------------------------------------------------------------------
+ * Author  : Shadrack
+ * Date    : 28/11/16.
+ * Name    : CleanJS
+ * Version : 1.0.1
+ * Purpose : Cleans and include all require(files) in one single file js file
+ *-------------------------------------------------------------------------*/
+
 "use strict";
 import fs = require('fs')
 import path = require('path')
 
-/**
+/**-----------------------------------------------------------------------
  * CLi line content padding
  * @param size
  * @param chars
@@ -16,7 +19,7 @@ import path = require('path')
  * @param r
  * @param favour
  * @return {string}
- */
+ *----------------------------------------------------------------------*/
 function pad(size, chars, buffer = 2, l = " ", r = " ", favour = "r") {
     let p = Math.floor((size - (chars.length + buffer)) / 2);
     let pl = `${l}`.repeat(p);
@@ -32,6 +35,10 @@ function pad(size, chars, buffer = 2, l = " ", r = " ", favour = "r") {
     return `${pl} ${chars} ${pr}`
 }
 
+/**
+ * FileX is placeholder Object class any x file in the
+ * given project tree
+ * */
 class FileX {
     url: string = "";
     name: string = "";
@@ -42,6 +49,11 @@ class FileX {
 
 
 //noinspection JSUnusedGlobalSymbols
+/**
+ * Clean class is Object class that has
+ * all necessary methods and algorithms for mapping parsing and optimizing
+ * a given module to a clean single file
+ * */
 export class Clean {
     private options;
     private rawFile;
@@ -172,8 +184,8 @@ export class Clean {
             fs.watch(dirName, {encoding: "utf-8"}, (eventType, filename: string) => {
                 if (filename && path.extname(filename) === ".js" && filename !== path.basename(this.clanFile)) {
                     let d = new Date();
-                    let h = (d.getHours() > 10) ? d.getHours() : "0" + d.getHours();
-                    let m = (d.getMinutes() > 10) ? d.getMinutes() : "0" + d.getMinutes();
+                    let h = (d.getHours() < 10) ? d.getHours() : "0" + d.getHours();
+                    let m = (d.getMinutes() < 10) ? d.getMinutes() : "0" + d.getMinutes();
                     console.log(`${pad(20, filename, 2, "-")} `,
                         ` ${eventType}ed @ ${h}:${m}:${d.getSeconds()}:${d.getMilliseconds()}`,
                         ` perfected `, this.clanFile);

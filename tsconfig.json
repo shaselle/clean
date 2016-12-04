@@ -3,6 +3,7 @@
     "module": "commonjs",
     "target": "es6",
     "sourceMap": true,
+    "listFiles": true,
     "types": [
       "typings.json"
     ]

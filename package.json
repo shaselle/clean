@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/shaselle/cleanjs.git"
   },
+  "bin": {
+    "clean": "./clean.js"
+  },
   "keywords": [
     "cleanjs",
     "js",
