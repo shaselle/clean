@@ -18,7 +18,7 @@ Otherwise I  assume that you have both Node and npm installed.
 
 1. Get this CleanJS into  project's npm dev devDependencies.
 
-    ```javascript
+    ```bash
     npm install --save-dev cleanjs
     ```
    
