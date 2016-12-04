@@ -59,17 +59,21 @@ When using TypeScript give the link to your compiled entry.js file as the from a
          **options**: *Object*
                 Plain JavaScript object specifying Clean Js preferences.
     
-2. Clean out all source-maps,
+2. Clean out all source-maps.
+
     This is preference based feature option, that lets you to clean out all the source maps produced
     by transpilers such as Typescript or Babel
     
-    **removeSourceMapComment** :*boolean*[false]
+    **removeSourceMapComment** : *boolean* [false]
          Setting this option will tell CleanJS to remove source maps from the clean.js file.
     
 3. Optimizes the js strict mode.
+
+    This allows you to optimize all "use strict" statements. Clean Js simply removes all and 
+    keeps  only one  major "use strict" to mark strict mode for the whole file.
+    
     **optimizeStrictMode** : *boolean* [true]
-        This allows you to optimize all "use strict" statements. Clean Js simply removes all and 
-        keeps  only one  major "use strict" to mark strict mode for the whole file.
+
 
 4. Optimizes strict mode by default and leaves source maps on through out development.
 
