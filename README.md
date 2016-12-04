@@ -7,13 +7,14 @@ Compiles all your project's js file tree into one single perfect JavaScript file
 This guide will help you get started with cleanJS in no time. 
 Using Clean JS is as easy as installing it, requiring and running it. 
 
-### Prerequisites
+## Prerequisites
 
 To use this module you will need NodeJs and/or npm installed on your development system.
 If you are using only node, then get a copy of the clean.js from the git repo and use it. 
 Otherwise I  assume that you have both Node and npm installed.
 
-### Installing
+## Installing
+
 
 1. Get this CleanJS into  project's npm dev devDependencies.
 
@@ -40,6 +41,7 @@ As of now  this supports cleaning of js files directly so long there is require(
 When using TypeScript give the link to your compiled entry.js file as the from argument to Perfect. 
 
 ## Feature options
+-----
 
 1. Clean out all require and export statements
     This is the sore aim of Clean JS, to give you a clear **require-less**  and **export-free** code.
@@ -97,6 +99,7 @@ This gives a  clean flat file with no extra code from external dependence tree m
 
 
 ### Results and benefits
+----
 A successful Clean JS run gives you :-
 
 1. A clean single JavaScript file 
