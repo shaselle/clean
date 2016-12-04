@@ -45,21 +45,20 @@ When using TypeScript give the link to your compiled entry.js file as the from a
 
 1. Clean out all require and export statements
     This is the sore aim of Clean JS, to give you a clear **require-less**  and **export-free** code.
+    Declare new Clean Object 
     
-    0. Declare new Clean Object 
+    ```javascript
     
-        ```javascript
-        
-        new Clean(from : string, to :string, [options: Object ]);
-        ```
-         **from** : *string*
-                path to file.js from which all the require/export statement will be to be cleaned.
-                
-         **to** : *string* 
-                path clean_file.js to which all clean js content will be written.
-                
-         **options**: *Object*
-                Plain JavaScript object specifying Clean Js preferences.
+    new Clean(from : string, to :string, [options: Object ]);
+    ```
+     **from** : *string*
+            path to file.js from which all the require/export statement will be to be cleaned.
+            
+     **to** : *string* 
+            path clean_file.js to which all clean js content will be written.
+            
+     **options**: *Object*
+            Plain JavaScript object specifying Clean Js preferences.
     
 2. Clean out all source-maps.
 
