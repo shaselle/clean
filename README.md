@@ -1,4 +1,4 @@
-# Clean JS
+# CleanJS
 ----
 Replaces all the require and export statements with the actual js content from the required file.
 Compiles all your project's js file tree into one single perfect JavaScript file.
