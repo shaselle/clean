@@ -1,0 +1,20 @@
+git:
+  depth: 3
+language: node_js
+node_js:
+  - "node"
+
+# blacklist
+branches:
+  except:
+  - legacy
+  - experimental
+
+# safe list
+branches:
+  only:
+  - master
+  - /^deploy-.*$/
+
+before_install:
+  - "npm i -g tape"

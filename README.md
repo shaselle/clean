@@ -109,4 +109,7 @@ A successful Clean JS run gives you :-
 6. Live Updates as  project file/s  change 
 7. Satisfaction for getting rid of unnecessary require+ overhead from project project.
 
+### Licence
+----
+MIT
 

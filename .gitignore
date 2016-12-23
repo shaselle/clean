@@ -1,8 +1,9 @@
 
-.idea/cleanjs.iml
-.idea/modules.xml
-.idea/workspace.xml
-clean.js.map
 node_modules/
 typings/
-.idea/inspectionProfiles/
+/.idea/
+dist/
+/.travis.yml
+/src/
+/test/
+/testIt.js

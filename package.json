@@ -4,14 +4,14 @@
   "description": "Replaces all the require(file.js) and export statements in file with the actual file cotent, and compiles them into one single perfect JavaScript file for the whole project.",
   "main": "clean.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tape test/**/*.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shaselle/cleanjs.git"
   },
   "bin": {
-    "clean": "./clean.js"
+    "clean": "./src/clean.js"
   },
   "keywords": [
     "cleanjs",
@@ -31,5 +31,9 @@
   "bugs": {
     "url": "https://github.com/shaselle/cleanjs/issues"
   },
-  "homepage": "https://github.com/shaselle/cleanjs#readme"
+  "homepage": "https://github.com/shaselle/cleanjs#readme",
+  "devDependencies": {
+    "firebase": "^3.6.4",
+    "tape": "^4.6.3"
+  }
 }
